@@ -10,12 +10,11 @@ function start(i) {
     var random = parseInt(Math.random() * 100);
 
     function startProgress() {
-        progress += 1;
-        if (progress <= random) {
+     
             percent.innerHTML = parseInt(progress) + '%';
             progressing.style.width = progress + '%';
-            circle.style.left = progress + '%';
-        }
+            circle.style.right = percent + '%';
+        
         requestAnimationFrame(startProgress);
     }
 
