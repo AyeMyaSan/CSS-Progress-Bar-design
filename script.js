@@ -12,7 +12,7 @@ function start(i) {
     function startProgress() {
         progress += 1;
         if (progress <= random) {
-            percent.innerHTML = parseInt(percent) + '%';
+            percent.innerHTML = parseInt(progress) + '%';
             progressing.style.width = progress + '%';
             circle.style.left = progress + '%';
         }
