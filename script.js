@@ -13,7 +13,7 @@ function start(i) {
      
             percent.innerHTML = parseInt(progress) + '%';
             progressing.style.width = progress + '%';
-            circle.style.right = percent + '%';
+            circle.style.left = percent + '%';
         
         requestAnimationFrame(startProgress);
     }
